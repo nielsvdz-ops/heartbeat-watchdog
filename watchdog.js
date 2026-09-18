@@ -83,8 +83,9 @@ async function check() {
   }
 }
 
+const VERSION = '1.1.0';
 server.listen(PORT, () => {
-  console.log(`[watchdog] listening on :${PORT}, grace ${GRACE_MS / 1000}s`);
+  console.log(`[watchdog] v${VERSION} listening on :${PORT}, grace ${GRACE_MS / 1000}s`);
   telegram(`✅ *Heartbeat watchdog started* — grace ${Math.round(GRACE_MS / 1000)}s. Waiting for laptop heartbeats.`);
 });
 
