@@ -1,0 +1,5 @@
+# Keep secrets and junk OUT of the image build context.
+push-config.json
+*.md
+.git
+node_modules
